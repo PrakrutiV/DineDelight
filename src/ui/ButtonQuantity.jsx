@@ -1,4 +1,4 @@
-import { Children } from "react";
+//import { Children } from "react";
 import Button from "./Button";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -23,12 +23,12 @@ function ButtonQuantity({ pizzaId }) {
 
   return (
     <>
-      <Button type="round" onClick={onClickIncHandle}>
-        +
-      </Button>
-      {quantity}
       <Button type="round" onClick={onClickDecHandle}>
         -
+      </Button>
+      {quantity}
+      <Button type="round" onClick={onClickIncHandle}>
+        +
       </Button>
     </>
   );
